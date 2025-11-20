@@ -62,7 +62,7 @@ var battery=scores[k].device.battery;
 var model=scores[k].device.phone;
 var ip=scores[k].device.rooted;
 var uid=scores[k].device.id;
-uo2.innerHTML+='<br><div class="usr" >'+model+' <span style="float:right" >'+aversion+'</span><br><br>Rooted: '+ip+' <span style="float:right" >Battery: '+battery+' </span><br><br><center><button onclick="setdev('+"'"+uid+"'"+')">Attack</button></center></div> '; 
+uo2.innerHTML+='<br><div class="usr" >'+model+' <span style="float:right" >'+aversion+'</span><br><br>Rooted: '+ip+' <span style="float:right" >Battery: '+battery+' </span><br><br><center><button onclick="setdev('+"'"+uid+"'"+')">Manage</button></center></div> '; 
 }
 }
 else{
@@ -162,7 +162,7 @@ var pd2=document.createElement("div");
 pd2.style.height="100%";
 pd2.style.width="100%";
 pd2.style.zIndex="999999999999999999";
-pd2.style.background="#001";
+pd2.style.background="#f5f6f7";
 pd2.style.color="#fff";
 pd2.style.position="fixed";
 pd2.style.top="50px";
@@ -178,7 +178,7 @@ pd3.style.zIndex="99999999999999999";
 pd3.style.background="#000";
 pd3.style.borderRadius="10px";
 pd3.style.color="#fff";
-pd3.style.border="1px solid #0f8";
+pd3.style.border="1px solid #16a34a";
 pd3.style.padding="10px";
 
 function aday(){
@@ -193,8 +193,8 @@ if(aday()){
 document.body.appendChild(pd2);
 }
 
-pd3.innerHTML="<center> <h3 style='color:red'>•Notice•<h3> </center><br>This is an Open Source RAT named <b style='color:gold'>AIRAVAT </b>available for free on <a href='https://github.com/Th30neAnd0nly/AIRAVAT' style='color:#0f8;'>GitHub</a>. Reselling , Changing Brand Name , Logo  of free version are strictly prohibited.";
-pd3.innerHTML+="<br><center><button onclick='this.parentElement.parentElement.parentElement.style.display="+'"none"'+"' style='margin-top:5px;color:white;background:#001;border:1px solid red;border-radius:5px;height:30px;width:150px;margin-bottom:10px;'> I Understand</button><br><u style='color:red;font-size:15px;' onclick='dnd(this);'>Hide this notice for a day</u>";
+pd3.innerHTML="<center> <h3 style='color:white'>•Notice•<h3> </center><br>This is an Open Source RAT named <b style='color:gold'>AIRAVAT </b>available for free on <a href='https://github.com/Th30neAnd0nly/AIRAVAT' style='color:#0f8;'>GitHub</a>. Reselling , Changing Brand Name , Logo  of free version are strictly prohibited.";
+pd3.innerHTML+="<br><center><button onclick='this.parentElement.parentElement.parentElement.style.display="+'"none"'+"' style='margin-top:5px;color:white;background:#001;border:1px solid #16a34a;border-radius:5px;height:30px;width:150px;margin-bottom:10px;'> I Understand</button><br><u style='color:grey;font-size:15px;' onclick='dnd(this);'>Hide this notice for a day</u>";
 pd2.appendChild(pd3);
 function dnd(m){
 var date = new Date().toLocaleDateString();
@@ -202,26 +202,25 @@ localStorage.airvat = date;
 m.parentElement.parentElement.parentElement.style.display="none";
 }
 var pd1=document.createElement("div");
-pd1.style.height="50px";
-pd1.style.width="90%";
+pd1.style.width="40%";
 pd1.style.margin="auto";
+pd1.style.padding="10px";
 pd1.style.marginTop="15px";
-pd1.style.background="#001";
-pd1.style.borderRadius="10px";
-pd1.style.color="#fff";
+pd1.style.marginBottom="25px";
+pd1.style.background="#fff";
+pd1.style.borderRadius="5px";
+pd1.style.color="grey";
+pd1.style.fontSize = "10px";
 pd1.style.textAlign="center";
-pd1.style.lineHeight="50px";
 pd1.style.border="1px solid #0f8";
 pd1.innerHTML="Want More Features Contact at <a href='https://t.me/th30neand0nly' style='color:#0f8;'>@th30neand0nly</a>";
+
 
 var pd=document.createElement("div");
 pd.style.height="20px";
 pd.style.width="100%";
-pd.style.color="#fff";
-pd.style.lineHeight="20px";
-pd.style.position="fixed";
-pd.style.top="25px";
-pd.style.left="0";
+pd.style.color="#d1d1d1";
+pd.style.fontSize = "10px";
 pd.style.zIndex="999999999999999999";
 pd.style.textAlign="center";
 pd.innerHTML="&copy; Prateek Chaubey";
@@ -340,7 +339,7 @@ function selectimg(o,p){
 for(var u=0;u<3;u++){
 $(".wallimg").children().eq(u).css("border","none")
 }
-$(o).css("border","2px solid red");
+$(o).css("border","2px solid #16a34a");
 wallpaperno=p+"";
 }
 function setdatcmd2(o,p,q,s,r){
@@ -725,7 +724,7 @@ ticker='('+ticker+')';
 }
 psdus.innerHTML+='<div class="keylogg" >'
 +'<img src="data:image/png;base64,'+ico+'" >'
-+'<div style="margin-left:60px;overflow:auto; "><b  style="color:green"> '+name+'</b><br><b style="color:red">'+packa+'</b><br><br><br></div>'
++'<div style="margin-left:60px;overflow:auto; "><b  style="color:green"> '+name+'</b><br><b style="color:white">'+packa+'</b><br><br><br></div>'
 +'<h4>'+title+'<br><b>'+ticker+'</b> </h4>'
 +'<br><p>'+text+'</p>'
 +'<br><span>'+convertTimestamp(time)+'</span>'

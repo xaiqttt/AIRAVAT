@@ -5,6 +5,7 @@
 <h1 align=center>AIRAVAT</h1>
 
 #### A multifunctional Android RAT with GUI based Web Panel without port forwarding.
+#### Web Panel modified with a lighter theme.
 
 > [!IMPORTANT]
 > The source code has been published <a href="./ANDROID APP/AIRAVAT.swb" >here</a> use <a href="https://github.com/Sketchware-Pro/Sketchware-Pro" >Sketchware Pro</a> to view the source code.
@@ -43,8 +44,6 @@
     - Auto Starts on restarting the device
     - Auto Starts when any notification arrives
  - No port forwarding needed
-
-<img align=center src=./.github/img.jpg >
 
 
 ## Requirements
